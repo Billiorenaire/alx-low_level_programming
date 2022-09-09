@@ -1,13 +1,17 @@
 #include<stdio.h>
-
-main()
+/**
+ * main - Entry point
+ *
+ * Return: always 0 (Success)
+ *
+ */
+int main(void)
 {
-	clrscr();
-	printf("     char is %2d bytes \n", sizeof(char));
-	printf("     int is %2d bytes \n", sizeof(int));
-	printf("     long int is %2d bytes \n", sizeof(long int));
-	printf("     long long int is %2d bytes \n", sizeof(long long int));
-	printf("     float is %2d bytes \n", sizeof(float));
+	printf("     char is %ld bytes \n", sizeof(char));
+	printf("     int is %ld bytes \n", sizeof(int));
+	printf("     long int is %ld bytes \n", sizeof(long int));
+	printf("     long long int is %ld bytes \n", sizeof(long long int));
+	printf("     float is %ld bytes \n", sizeof(float));
 	getch();
 	return (0);
 }
