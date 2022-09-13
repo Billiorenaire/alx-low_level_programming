@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <main.h>
 
 /**
@@ -7,13 +8,15 @@
  */
 int main(void)
 {
-	char oli[] = "_putchar";
-	int c;
+	char *sh  = "_putchar";
 
-	for (c = 0; c < 8; c++)
+	while (*sh)
 	{
-		_putchar(oli[c]);
+		_putchar(*sh);
+		sh++;
+
 	}
 	_putchar('\n');
+
 	return (0);
 }
